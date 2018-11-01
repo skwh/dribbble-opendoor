@@ -24,9 +24,8 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 2vh 0vw;
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 8;
   box-shadow: 1px 1px 5px $highlight;
 
   .logo {

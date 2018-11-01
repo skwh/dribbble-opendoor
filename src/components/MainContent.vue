@@ -1,7 +1,7 @@
 <template>
   <main>
-    <card title="1234 Example Rd" :action="{href:'#', text: 'view full offer'}">
-      <table>
+    <card title="1234 Example Rd." :action="{href:'#', text: 'view full offer'}">
+      <table cellpadding="15px">
         <tr>
           <td>Home value</td>
           <td>$365,000</td>
@@ -9,7 +9,7 @@
         <tr>
           <td>
             Other closing costs
-            <material-icon name="keyboard_arrow_down"></material-icon>
+            <material-icon name="keyboard_arrow_down" size="24px"></material-icon>
           </td>
           <td>
             $2,000
@@ -42,7 +42,7 @@
       <div v-for="(faq, index) in faqs"
            :key="`faq-${index}`"
            class="faq-item expandable">
-        <material-icon name="keyboard_arrow_down"></material-icon>
+        <material-icon name="keyboard_arrow_down" size="26px"></material-icon>
         <span>{{ faq }}</span>
       </div>
     </card>
@@ -94,5 +94,42 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../styles/variables';
 
+main {
+  grid-row-start: 3;
+  grid-column-start: 4;
+
+  table {
+    width: 100%;
+
+    tr {
+      padding: 0.5rem;
+    }
+
+    td i {
+      color: $blue;
+      position: relative;
+      top: 3px;
+    }
+
+    td:last-child {
+      text-align: right;
+    }
+  }
+
+  .faq-item {
+    color: $grey;
+    padding: 1rem 0.5rem;
+    padding-left: 0;
+    font-size: 0.9rem;
+
+    i {
+      color: $blue;
+      position: relative;
+      top: 3px;
+      padding-right: 0.5rem;
+    }
+  }
+}
 </style>

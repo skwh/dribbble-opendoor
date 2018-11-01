@@ -41,8 +41,8 @@ a {
 
 #app {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-  grid-template-rows: 60px 1fr;
+  grid-template-columns: 1fr 230px 40px 3fr 40px 230px 1fr;
+  grid-template-rows: 66px 30px 1fr;
 }
 
 </style>
